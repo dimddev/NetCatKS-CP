@@ -1,0 +1,10 @@
+{
+    "WEB": {
+        "service_name": "Default WEB Server", 
+        "www_root": "", 
+        "port": 8000, 
+        "http_methods": [
+            "GET", "POST"
+        ]
+    }
+}

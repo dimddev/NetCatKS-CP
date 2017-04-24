@@ -1,0 +1,7 @@
+{
+    "TCP": {
+        "service_name": "Default TCP Server", 
+        "port": 8484, 
+        "tcp_back_log": 50
+    }
+}

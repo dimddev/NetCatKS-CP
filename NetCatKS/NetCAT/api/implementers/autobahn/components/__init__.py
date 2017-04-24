@@ -76,12 +76,10 @@ class WampDefaultComponent(ApplicationSession):
 
         self.__gsm = getGlobalSiteManager()
 
-        if self.cfg.protocol == 'wss':
+        self.__logger.info('WAMP is secure, switch to wss...')
 
-            self.__logger.info('WAMP is secure, switch to wss...')
-
-            WampDefaultComponent.onConnect = onConnect
-            WampDefaultComponent.onChallenge = onChallenge
+        WampDefaultComponent.onConnect = onConnect
+        WampDefaultComponent.onChallenge = onChallenge
 
     def subscriber_dispatcher(self, sub_data):
 
